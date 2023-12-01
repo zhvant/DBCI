@@ -170,7 +170,7 @@ namespace DBCI
                 }
                 SqlCommand getDefinitionSQL = new SqlCommand(
                     $@"DECLARE @table_name SYSNAME
-                    SELECT @table_name = '{SchemaName}.{ObjectName}'
+                    SELECT @table_name = N'{SchemaName}.{ObjectName}'
                     
                     DECLARE
                     @object_name SYSNAME
@@ -383,7 +383,7 @@ namespace DBCI
                     FROM[msdb].[dbo].[sysjobs] j
                     join[msdb].[dbo].[syscategories] c on j.[category_id] = c.[category_id]
                     left join sys.syslogins sl on j.owner_sid = sl.sid
-                    where[j].[name] = '{ObjectName}'
+                    where[j].[name] = N'{ObjectName}'
                                                    
                     
                     declare @Code nvarchar(max)

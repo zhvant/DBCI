@@ -27,7 +27,7 @@ namespace DBCI
             try
             {
                 System.IO.Directory.CreateDirectory(FilePath);
-                using (StreamWriter sw = new StreamWriter(FullPath, false, System.Text.Encoding.Default))
+                using (StreamWriter sw = new StreamWriter(FullPath, false, System.Text.Encoding.UTF8))
                 {
                     if (Content != null)
                     {
