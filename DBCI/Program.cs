@@ -9,7 +9,7 @@ namespace DBCI
             string HelpMessage =
 $@" {System.AppDomain.CurrentDomain.FriendlyName} [-h] [-s SERVER] [-db DATABASE] [-o OBJECTS] [-f FILE]
   [-p PATH] [-u USER] [-pwd PASSWORD]
-Service for scripting Database Objects for Continous Integration.
+Service for scripting Database Objects for Continuous Integration.
 
     Argument List:
       -h   --help      Help
